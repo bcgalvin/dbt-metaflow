@@ -36,7 +36,7 @@ Issues = "https://github.com/bcgalvin/dbt-metaflow/issues"
 Source = "https://github.com/bcgalvin/dbt-metaflow"
 
 [project.scripts]
-dbt-metaflow = "dbt_metaflow.cli:app"
+dbt-metaflow = "dbt_metaflow.cli.cli:app"
 
 [tool.hatch.version]
 path = "dbt_metaflow/__about__.py"
@@ -189,7 +189,7 @@ ignore = [
 
 [tool.ruff.extend-per-file-ignores]
 "__init__.py" = ["E402", "F401"]
-"dbt_metaflow/cli/__init__.py" = ["PLR0917", "TRY301", "BLE001", "ARG001"]
+"dbt_metaflow/cli/cli.py" = ["PLR0917", "TRY301", "BLE001", "ARG001"]
 "tests/**/*.py" = ["S105", "T201", "PLW1514"]
 
 [tool.ruff.isort]
